@@ -57,7 +57,7 @@ const malla = [
       { codigo: "ELEFORIN01", nombre: "Electivo de Formación Integral", requisitos: ["FILS 0002"] },
       { codigo: "MEVE 0019", nombre: "Nutrición y Alimentación Animal", requisitos: ["MEVE 0009"] },
       { codigo: "MEVE 0021", nombre: "Patología Especial de Sistemas", requisitos: ["MEVE 0082"] },
-      { codigo: "MEVE 0022", nombre: "Farmacología Veterinaria I", requisitos: ["MEVE 0082", "MEVE 0028"] },
+      { codigo: "MEVE 0022", nombre: "Farmacología Veterinaria I", requisitos: ["MEVE 0015", "MEVE 0028"] },
       { codigo: "MEVE 0024", nombre: "Andrología", requisitos: ["MEVE 0015", "MEVE 0020"] },
       { codigo: "MEVE 0036", nombre: "Sistema de Producción de Carne", requisitos: ["MEVE 0009", "MEVE 0018", "MEVE 0020", "MEVE B002"] },
       { codigo: "MEVE 0046", nombre: "Economía", requisitos: ["DMAE M001", "MEVE 0009"] },
