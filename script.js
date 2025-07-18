@@ -238,3 +238,46 @@ function init() {
 }
 
 init();
+function verificarTurnoIntrahospitalario() {
+  const ramos = document.querySelectorAll('.ramo[data-semestre]');
+  const turno = document.querySelector('.ramo[data-codigo="TURNO_INTRAHOSP1"]');
+
+  let aprobados = 0;
+  let totalNecesarios = 0;
+
+  ramos.forEach(ramo => {
+    const semestre = parseInt(ramo.dataset.semestre);
+    if (semestre <= 8) {
+      totalNecesarios++;
+      if (ramo.classList.contains('aprobado')) {
+        aprobados++;
+      }
+    }
+  });
+
+  if (turno) {
+    if (aprobados === totalNecesarios) {
+      turno.classList.remove('bloqueado');
+      turno.classList.add('disponible');
+    } else {
+      turno.classList.remove('disponible');
+      turno.classList.add('bloqueado');
+    }
+  }
+}
+
+function verificarEpidemiologia() {
+  const epi = document.querySelector('.ramo[data-codigo="EPIDEMIOLOGIA"]');
+  const requisito1 = document.querySelector('.ramo[data-codigo="MEVE0028"]');
+  const requisito2 = document.querySelector('.ramo[data-codigo="MEVE0049"]');
+
+  if (epi && requisito1 && requisito2) {
+    if (requisito1.classList.contains('aprobado') && requisito2.classList.contains('aprobado')) {
+      epi.classList.remove('bloqueado');
+      epi.classList.add('disponible');
+    } else {
+      epi.classList.remove('disponible');
+      epi.classList.add('bloqueado');
+    }
+  }
+}
