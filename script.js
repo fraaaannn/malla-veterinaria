@@ -29,11 +29,11 @@ const malla = [
       { codigo: "DBIO 1031", nombre: "Ecología", requisitos: ["MEVE 0005"] },
       { codigo: "MEVE 0010", nombre: "Fisiología Animal", requisitos: ["DBIO 1076", "MEVE B001", "MEVE B002"] },
       { codigo: "MEVE 0011", nombre: "Anatomía Veterinaria II", requisitos: ["MEVE 0007"] },
-      { codigo: "MEVE 0012", nombre: "Microbiología General", requisitos: [] },
-      { codigo: "MEVE 0017", nombre: "Inmunología Veterinaria", requisitos: [] },
-      { codigo: "MEVE 0018", nombre: "Genética Ganadera", requisitos: ["DMAE M001"] },
+      { codigo: "MEVE 0012", nombre: "Microbiología General", requisitos: ["DBIO 1076"]},
+      { codigo: "MEVE 0017", nombre: "Inmunología Veterinaria", requisitos: ["MEVE B001", "MEVE B002"] },
+      { codigo: "MEVE 0018", nombre: "Genética Ganadera", requisitos: ["DMAE M001"], "DBIO 1069" },
       { codigo: "MEVE 0122", nombre: "Inglés Instrumental II", requisitos: ["MEVE 0121"] },
-      { codigo: "MEVE 0097", nombre: "Pasantía Intrahospitalaria I", requisitos: [] },
+      { codigo: "MEVE 0097", nombre: "Pasantía Intrahospitalaria I", requisitos: ["ASIGESAP01", "DBIO 1069", "DMAE M001", "DQUI 1035", "MEVE 0120", "MEVE 0002", "DBIO 1076", "MEVE B001", "MEVE B002", "MEVE 0005", "MEVE 0007", "MEVE 0121"] },
       { codigo: "MEVE 0099", nombre: "Pasantía Intrahospitalaria II", requisitos: ["MEVE 0097"] }
     ]
   },
