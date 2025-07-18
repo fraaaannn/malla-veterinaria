@@ -107,7 +107,7 @@ const malla = [
     semestre: "SEMESTRE 8",
     ramos: [
       { codigo: "MEVE 0031", nombre: "Toxicología Veterinaria", requisitos: ["MEVE 0026"] },
-      { codigo: "MEVE 0035", nombre: "Complementarios de Diagnóstico", requisitos: ["MEVE 0002", "MEVE 0032"] },
+      { codigo: "MEVE 0033", nombre: "Métodos complementarios de Diagnóstico", requisitos: ["MEVE 0002", "MEVE 0032"] },
       { codigo: "MEVE 0034", nombre: "Medicina Interna", requisitos: ["MEVE 0029", "MEVE 0032"] },
       { codigo: "MEVE 0037", nombre: "Metodología de la Investigación", requisitos: ["MEVE 0049"] },
       { codigo: "MEVE 0045", nombre: "Epidemiología y Salud Pública", requisitos: ["MEVE 0028", "MEVE 0049"] },
