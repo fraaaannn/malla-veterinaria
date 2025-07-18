@@ -125,7 +125,7 @@ const malla = [
   {
     semestre: "SEMESTRE 9",
     ramos: [
-      { codigo: "MEVE 0044", nombre: "Clínica de Animales Silvestres y Exóticos", requisitos: ["MEVE 0031", "MEVE 0034", "MEVE 0033", "MEVE 126"] },
+      { codigo: "MEVE 0044", nombre: "Clínica de Animales Silvestres y Exóticos", requisitos: ["MEVE 0031", "MEVE 0034", "MEVE 0033", "MEVE 0126"] },
       { codigo: "MEVE 0056", nombre: "Clínica de Equinos y Rumiantes", requisitos: ["MEVE 0031", "MEVE 0034", "MEVE 0033"] },
       { codigo: "MEVE 0057", nombre: "Clínica de Animales de Compañía", requisitos: ["MEVE 0031", "MEVE 0034", "MEVE 0033"] },
       { codigo: "MEVE 0090", nombre: "Memoria de Título", requisitos: ["ASIGESAP01", "DBIO 1069", "DMAE M001", "DQUI 1035", "MEVE 0120", "MEVE 0002", "DBIO 1076", "MEVE B001", "MEVE B002", "MEVE 0005", "MEVE 0007", "MEVE 0121", "FILS 0001", "DBIO 1031", "MEVE 0010", "MEVE 0011", "MEVE 0012", "MEVE 0017", "MEVE 0018", "MEVE 0122", "MEVE 0097", "MEVE 0099", "FILS 0002", "MEVE 0009", "MEVE 0015", "MEVE 0020", "MEVE 0027", "MEVE 0028", "MEVE 0082", "MEVE 0101", "MEVE 0103", "ELEFORIN01", "MEVE 0019", "MEVE 0021", "MEVE 0022", "MEVE 0024", "MEVE 0036", "MEVE 0046", "MEVE 0104", "MEVE 0105", "MEVE 0025", "MEVE 0026", "MEVE 0030", "MEVE 0088", "MEVE 0124", "MEVE 0125", "MEVE 0106", "MEVE 0107", "MEVE 0093", "MEVE 0034", "MEVE 0029", "MEVE 0032", "MEVE 0049", "MEVE 0058", "MEVE 0126", "MEVE 0108", "MEVE 0109", "MEVE 0150", "MEVE 0149", "MEVE 0031", "MEVE 0033", "MEVE 0034", "MEVE 0035", "MEVE 0045", "MEVE 0127", "MEVE 0110", "MEVE 0111", "MEVE 0151"] },
