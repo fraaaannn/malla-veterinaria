@@ -29,9 +29,9 @@ const malla = [
       { codigo: "DBIO 1031", nombre: "Ecología", requisitos: ["MEVE 0005"] },
       { codigo: "MEVE 0010", nombre: "Fisiología Animal", requisitos: ["DBIO 1076", "MEVE B001", "MEVE B002"] },
       { codigo: "MEVE 0011", nombre: "Anatomía Veterinaria II", requisitos: ["MEVE 0007"] },
-      { codigo: "MEVE 0012", nombre: "Microbiología General", requisitos: ["DBIO 1076"]},
-      { codigo: "MEVE 0017", nombre: "Inmunología Veterinaria", requisitos: ["MEVE B001", "MEVE B002"] },
-      { codigo: "MEVE 0018", nombre: "Genética Ganadera", requisitos: ["DMAE M001"], "DBIO 1069" },
+      { codigo: "MEVE 0012", nombre: "Microbiología General", requisitos: [] },
+      { codigo: "MEVE 0017", nombre: "Inmunología Veterinaria", requisitos: [] },
+      { codigo: "MEVE 0018", nombre: "Genética Ganadera", requisitos: ["DMAE M001"] },
       { codigo: "MEVE 0122", nombre: "Inglés Instrumental II", requisitos: ["MEVE 0121"] },
       { codigo: "MEVE 0097", nombre: "Pasantía Intrahospitalaria I", requisitos: ["ASIGESAP01", "DBIO 1069", "DMAE M001", "DQUI 1035", "MEVE 0120", "MEVE 0002", "DBIO 1076", "MEVE B001", "MEVE B002", "MEVE 0005", "MEVE 0007", "MEVE 0121"] },
       { codigo: "MEVE 0099", nombre: "Pasantía Intrahospitalaria II", requisitos: ["MEVE 0097"] }
@@ -238,46 +238,3 @@ function init() {
 }
 
 init();
-function verificarTurnoIntrahospitalario() {
-  const ramos = document.querySelectorAll('.ramo[data-semestre]');
-  const turno = document.querySelector('.ramo[data-codigo="TURNO_INTRAHOSP1"]');
-
-  let aprobados = 0;
-  let totalNecesarios = 0;
-
-  ramos.forEach(ramo => {
-    const semestre = parseInt(ramo.dataset.semestre);
-    if (semestre <= 8) {
-      totalNecesarios++;
-      if (ramo.classList.contains('aprobado')) {
-        aprobados++;
-      }
-    }
-  });
-
-  if (turno) {
-    if (aprobados === totalNecesarios) {
-      turno.classList.remove('bloqueado');
-      turno.classList.add('disponible');
-    } else {
-      turno.classList.remove('disponible');
-      turno.classList.add('bloqueado');
-    }
-  }
-}
-
-function verificarEpidemiologia() {
-  const epi = document.querySelector('.ramo[data-codigo="EPIDEMIOLOGIA"]');
-  const requisito1 = document.querySelector('.ramo[data-codigo="MEVE0028"]');
-  const requisito2 = document.querySelector('.ramo[data-codigo="MEVE0049"]');
-
-  if (epi && requisito1 && requisito2) {
-    if (requisito1.classList.contains('aprobado') && requisito2.classList.contains('aprobado')) {
-      epi.classList.remove('bloqueado');
-      epi.classList.add('disponible');
-    } else {
-      epi.classList.remove('disponible');
-      epi.classList.add('bloqueado');
-    }
-  }
-}
